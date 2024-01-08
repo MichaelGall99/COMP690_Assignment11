@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M11 Assignment - Michael Gall</title>
+    <script>
+        function loadScript(url) {    
+                var head = document.getElementsByTagName('head')[0];
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = url;
+                head.appendChild(script);
+        }
+    </script>
+</head>
+<body>
+        <h1>COMP690:  ASSIGNMENT 11</h1>
+
+        <h2>Part 1 - Strings and String Manipulation</h2>
+
+        <h3>1. Enter your name and click 'Get Length' to display the number of characters in your name</h3>
+        <label for="name1-1">Name:</label>
+        <input type="text" id="name1-1"><br>
+        <input type="button" id="btn1-1" value="Get Length">
+
+        <h3>2. Enter your name and a numeric zero-based index position within your name.  Click 'Get Character' to display the character at that position</h3>
+        <label for="name1-2">Name:</label>
+        <input type="text" id="name1-2"><br>
+        <label for="num1-2">Zero-Based Index Position:</label>
+        <input type="text" id="num1-2"><br>        
+        <input type="button" id="btn1-2" value="Get Character">
+
+        <h3>3. Enter your first name and your last name.  Then click 'Get Full Name' to display your full name.</h3>
+        <label for="firstName1-3">First Name:</label>
+        <input type="text" id="firstName1-3"><br>
+        <label for="lastName1-3">Last Name:</label>
+        <input type="text" id="lastName1-3"><br>
+        <input type="button" id="btn1-3" value="Get Full Name">
+        
+        <h3>4. Click the following button to display index of the word fox in the below text string</h3>
+        <label for="text1-4">Text String:</label>
+        <input type="text" id="text1-4" size="40" value="The quick brown fox jumps over the lazy dog" disabled readonly><br>
+        <input type="button" id="btn1-4" value="Index of the word 'fox'">
+
+        <h3>5. Click the following button to display the last index of the word fox in the below text string</h3>
+        <label for="text1-5">Text String:</label>
+        <input type="text" id="text1-5" size="40" value="The quick brown fox jumps over the lazy fox" disabled readonly><br>
+        <input type="button" id="btn1-5" value="Last index of the word 'fox'">
+
+        <h3>6. Click the following button to display your full name in place of 'the lazy dog' in the below text string</h3>
+        <label for="text1-6">Text String:</label>
+        <input type="text" id="text1-6" size="40" value="The quick brown fox jumps over the lazy dog" disabled readonly><br>
+        <label for="fullName1-6">Full Name:</label>
+        <input type="text" id="fullName1-6"><br>        
+        <input type="button" id="btn1-6" value="Your full name in place of 'the lazy dog'">
+
+        <h3>7. Click the following button to search for the word you entered in the 'Search Word' text box</h3>
+        <label for="text1-7">Text String:</label>
+        <input type="text" id="text1-7" size="40" value="The quick brown fox jumps over the lazy dog" disabled readonly><br>
+        <label for="searchWord1-7">Search Word:</label>
+        <input type="text" id="searchWord1-7"><br>             
+        <input type="button" id="btn1-7" value="Search Word results">
+
+        <h3>8. Click the following button to display 'the lazy dog' substring in uppercase characters</h3>
+        <label for="text1-8">Old String:</label>
+        <input type="text" id="text1-8" size="40" value="The quick brown fox jumps over the lazy dog" disabled readonly><br>
+        <input type="button" id="btn1-8" value="Display uppercase 'New String'">
+        
+        <h3>9. Click the following button to display the below Text String trimmed and in lowercase characters</h3>
+        <label for="text1-9">Text String:</label>
+        <input type="text" id="text1-9" size="50" value=" THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG          " disabled readonly><br>
+        <input type="button" id="btn1-9" value="Display Text String trimmed & lowercase">
+
+        <h3>10. Click the following button to display the below Text String with the first word capitalized</h3>
+        <label for="text1-10">Text String:</label>
+        <input type="text" id="text1-10" size="40" value="the quick brown fox jumps over the lazy dog" disabled readonly><br>
+        <input type="button" id="btn1-10" value="Display Text String with first word capitalized"></br></br>
+
+        <h2>Part 2 - Math and Math Functions</h2>
+
+        <h3>1. Enter a positive or negative number.  Click the following button to display the number as a positive value.</h3>
+        <label for="num2-1">Enter Positive or Negative Number:</label>
+        <input type="text" id="num2-1"><br>        
+        <input type="button" id="btn2-1" value="Display number as positive number">
+
+        <h3>2. Enter a floating point number.  Click the following button to display the number rounded up to nearest whole number.</h3>
+        <label for="num2-2">Enter Floating Number:</label>
+        <input type="text" id="num2-2"><br>        
+        <input type="button" id="btn2-2" value="Display number rounded up to a whole number">
+
+        <h3>3. Enter a floating point number.  Click the following button to display the number rounded down to nearest whole number.</h3>
+        <label for="num2-3">Enter Floating Number:</label>
+        <input type="text" id="num2-3"><br>        
+        <input type="button" id="btn2-3" value="Display number rounded down to a whole number">
+
+        <h3>4. Enter a list of 5 numbers, comma-delimited, in the following text box.  Click the following button to display the largest & smallest numbers in the list.</h3>
+        <label for="numlist2-4">Enter 5 numbers (comma-delimited):</label>
+        <input type="text" id="numlist2-4"><br>        
+        <input type="button" id="btn2-4" value="Display largest & smallest numbers in the list">
+
+        <h3>5. Enter a number.  Click the following button to display the square root of the number.</h3>
+        <label for="num2-5">Enter Number:</label>
+        <input type="text" id="num2-5"><br>        
+        <input type="button" id="btn2-5" value="Display square root"></br></br>
+      
+
+        <h2>Part 3 - Date and Date Functions</h2>
+
+        <h3>1. Select a date.  Click the following button to display the number of days in that month.</h3>
+        <label for="date3-1">Select A Date:</label>
+        <input type="date" id="date3-1" size="25"><br>
+        <input type="button" id="btn3-1" value="Display number of days in month">
+
+        <h3>2. Select a date.  Click the following button to display the name of the month.</h3>
+        <label for="date3-2">Select A Date:</label>
+        <input type="date" id="date3-2" size="25"><br>
+        <input type="button" id="btn3-2" value="Display name of month">
+
+        <h3>3. Select a date.  Click the following button to see if selected date falls on a weekend.</h3>
+        <label for="date3-3">Select A Date:</label>
+        <input type="date" id="date3-3" size="25"><br>
+        <input type="button" id="btn3-3" value="Display if weekend">
+
+        <h3>4. Select a date.  Click the following button to see the previous day's Day of the Week.</h3>
+        <label for="date3-4">Select A Date:</label>
+        <input type="date" id="date3-4" size="25"><br>
+        <input type="button" id="btn3-4" value="Display previous day's Day of the Week">
+
+        <h3>5. Click the following button to see the first letter of the current Day of the Week.</h3>
+        <input type="button" id="btn3-5" value="Display first letter of current Day of the Week"></br></br>
+
+
+        <h2>Part 4 - Death by JavaScript</h2>
+
+        <h3>1. Enter an Input String (letters only).  Click the following button to sort characters of the string in alphabetical order.</h3>
+        <label for="string4-1">Input String:</label>
+        <input type="text" id="string4-1" size="40"><br>
+        <input type="button" id="btn4-1" value="Display alphabetical order">
+
+        <h3>2. Enter an Input String (letters only).  Click the following button to capitalize first character of each word.</h3>
+        <label for="string4-2">Input String:</label>
+        <input type="text" id="string4-2" size="40"><br>
+        <input type="button" id="btn4-2" value="Display first letter of each word capitalized">
+
+        <h3>3. Enter an Input String (letters only).  Click the following button to get the vowel count.</h3>
+        <label for="string4-3">Input String:</label>
+        <input type="text" id="string4-3" size="40"><br>
+        <input type="button" id="btn4-3" value="Display vowel count">
+
+        <h3>4. Enter number for length of auto-generated id.  Click the following button to display the auto-generated id.</h3>
+        <label for="num4-4">Length of Auto-Generated ID:</label>
+        <input type="text" id="num4-4" size="10"><br>
+        <input type="button" id="btn4-4" value="Display Auto-Generated ID">
+
+        <h3>5. Enter comma-delimited list of Country Names.  Click the following button to display the longest Country Name</h3>
+        <label for="string4-5">List of Country Names (comma-delimited):</label>
+        <input type="text" id="string4-5" size="80" value=""><br>
+        <input type="button" id="btn4-5" value="Display Longest Country Name">
+
+    </main>
+    <script>
+        loadScript("js/helper.js")
+        loadScript("js/strings.js")
+        loadScript("js/math.js")
+        loadScript("js/dates.js")
+        loadScript("js/deathbyjs.js")
+    </script>
+</body>
+</html>
